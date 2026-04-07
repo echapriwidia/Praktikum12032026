@@ -1,0 +1,30 @@
+/*
+ * Nama: Echa Priwidia
+ * Nim: 2501083005
+ * Desk: Class Cek Angka
+ */
+package Praktikum12032026;
+
+/**
+ *
+ * @author Echa2
+ */
+import java.util.Scanner;
+public class CekAngka {
+        public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n,banyak;
+        System.out.print("Masukkan angka: ");
+        n = input.nextInt();
+        banyak = 1;
+
+        while (n > 9)
+        {
+            System.out.print("Masukkan angka: ");
+            n = input.nextInt();
+            banyak = banyak + 1;
+        }
+        System.out.println("Jumlah angka yang diinputkan = " + banyak);
+    }
+}
+ 
